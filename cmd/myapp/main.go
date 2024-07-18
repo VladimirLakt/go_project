@@ -1,7 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 func main() {
-	fmt.Println("Hello, Go project")
+	var now time.Time = time.Now()
+	var year int = now.Year()
+	fmt.Println(year)
 }
